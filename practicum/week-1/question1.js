@@ -11,6 +11,6 @@ var runningSum = function(input) {
    for(x = 1; x < input.length-1 ;x++){
     sum += parseint(input[x]);
    }
-   return sum;
+   return input;
 };
    
