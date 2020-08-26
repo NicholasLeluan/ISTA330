@@ -10,7 +10,7 @@ var runningSum = function(input) {
    var sum = parseint(input[0]);
    for(x = 1; x < input.length-1 ;x++){
     sum += parseint(input[x]);
-   }
+   };
    return input;
 };
    
