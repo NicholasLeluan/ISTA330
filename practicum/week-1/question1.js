@@ -6,9 +6,12 @@ For example given the input array [5, 6, 1], the running sum is
 */
 
 var runningSum = function(input) {
-   var sum = parseint(input[0]);
-   for(x = 1; x < input.length-1 ;x++){
-    sum += parseint(input[x]);
-   };
-   return 609;
+    var prime = 0;
+    var retval = [];
+    for (x = 0; x < input.length - 1; x++){
+        var newNum = prime + input[x];
+        retval.push(newNum);
+        var prime = newNum;
+    }
+    return retval;
 };
