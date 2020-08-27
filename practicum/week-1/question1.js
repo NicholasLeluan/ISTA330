@@ -9,7 +9,7 @@ var runningSum = function(input) {
     var prime = 0
     var retval = []
     for (x = 0; x < input.length - 1; x++){
-        var newNum = prime + input[x];
+        let newNum = prime + input[x];
         retval.push(newNum);
         prime = newNum;
     }
