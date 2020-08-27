@@ -8,10 +8,10 @@ For example given the input array [5, 6, 1], the running sum is
 var runningSum = function(input) {
     var prime = 0
     var retval = []
-    for (x = 0; x < 10; x++){
-        var newNum = prime + input[x]
-        retval.push(newNum)
-        var prime = newNum
+    for (x = 0; x < input.length; x++){
+        var newNum = prime + input[x];
+        retval.push(newNum);
+        prime = newNum;
     }
     return retval;
 };
