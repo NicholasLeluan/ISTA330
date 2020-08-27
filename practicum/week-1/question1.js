@@ -6,12 +6,12 @@ For example given the input array [5, 6, 1], the running sum is
 */
 
 var runningSum = function(input) {
-    var prime = 0;
-    var retval = [];
+    var prime = 0
+    var retval = []
     for (x = 0; x < input.length - 1; x++){
-        var newNum = prime + input[x];
-        retval.push(newNum);
-        var prime = newNum;
+        var newNum = prime + input[x]
+        retval.push(newNum)
+        var prime = newNum
     }
     return retval;
 };
