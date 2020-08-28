@@ -15,8 +15,8 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
                  total += cookies[x];
          }
          if (total % extraCookies === 0){
-                 return True;
+                 return true;
          }
-         else {return False;}
+         else {return false;}
          
  };
