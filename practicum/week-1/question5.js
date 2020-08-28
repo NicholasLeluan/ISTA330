@@ -16,9 +16,9 @@ var minimalReduction = function(n) {
     while (!(n=0)) {
         opp++;
         if (n % 4 === 0){
-            n %= 4;
+            n /= 4;
         }else if (n % 3 === 0){
-            n %= 3;
+            n /= 3;
         }else{
             n -= 1;
         }
