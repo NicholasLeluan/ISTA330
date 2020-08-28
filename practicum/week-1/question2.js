@@ -10,6 +10,13 @@ Example: input: cookies = [3, 5, 8] , extraCookies = 8
  */
 
  var canGetEqualCookies = function(cookies, extraCookies) {
-     
-    
+         var total = 0;
+         for (var x = 0; x < cookies.length; x++) {
+                 total += cookies[x];
+         }
+         if (total % extraCookies === 0){
+                 return True
+         }
+         else {return False}
+         
  };
