@@ -19,10 +19,12 @@ var howManyCommon = function(A, B) {
         var short = B;
         var long = A;
     }
-    for (var k = 0; k <= long.short; k++){
+    for (var k = 0; k <= short.length; k++){
         var curr = short.charAt(k);
-        if (long.contains(short)){
-            count++;
+        for (var i = 0; i < long.length; i++){
+            if (curr === long.charAt(i)){
+                count++;
+            }
         }
 
     } return count;
