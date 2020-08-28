@@ -19,6 +19,6 @@ var numberOfOrderedPairs = function(input) {
                 retArray.push(pair);
             }
         }
-    }return retArray;
+    }return retArray.length;
 
 };
