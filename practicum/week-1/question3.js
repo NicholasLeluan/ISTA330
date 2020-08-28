@@ -9,17 +9,16 @@ There are 5 ordered pairs: (4, 6), (4, 9), (2, 6), (2, 9)
 */
 
 var numberOfOrderedPairs = function(input) {
-    var retval = [];
-        for (var x = 0; x < input.length; x++){
-            for (x+1; x < input.length - x; x++){
-                if (input[x]<input[x+1]){
-                    let pair = input[x].toString().concat(input[x+1]);
-                    if (retval.indexOf(pair) === -1){
-                        retval.push(pair);
-                    }
-                }
-
-            } 
-    } return retval.length;
+    var retArray = [];
+    for (var x = 0; x < input.length - 1; x++) {
+        var i = input[x];
+        for (var z = 1; z < input.length - x; z++) {
+            var j = input[x+z];
+            var pair = i.toString().concat(j.toString());
+            if (i < j && retArray.indexOf(pair)===-1){
+                retArray.push(pair);
+            }
+        }
+    }return retArray;
 
 };
