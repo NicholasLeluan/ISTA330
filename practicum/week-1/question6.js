@@ -9,7 +9,7 @@ var median = function(input) {
     if (input.length % 2 === 1){
         return input[Math.floor(input.length/2)];
     }else {
-        var high = input[((input.length/2) + 1)];
+        var high = input[(input.length/2)];
         var low = input[((input.length/2) - 1)];
         console.log(high);
         console.log(low);
