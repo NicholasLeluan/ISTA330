@@ -24,7 +24,7 @@ var numberOfOrderedPairs = function(input) {
                     }
 
                 } 
-            }return retval.length;
-    }
+            }
+    } return retval.length;
 
 };
