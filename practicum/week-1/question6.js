@@ -11,7 +11,7 @@ var median = function(input) {
     }else {
         var high = input[((input.length/2) + 1)];
         var low = input[((input.length/2) - 1)];
-        return high/low;
+        return ((high+low)/2);
     }
 
 };
