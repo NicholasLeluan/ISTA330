@@ -11,6 +11,8 @@ output: 4
 */
 
 var maxSumOfMins = function(input) {
+       /* pair the even indexes with even; odd with odd
+       */
        var allMins = 0;
        for (var x = 0; x < input.length; x+=2) {
               var A = input[x];
