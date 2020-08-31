@@ -9,10 +9,16 @@ output: 'hello'
 */
 
 var suffleString = function(input, shuffleIndices) {
-    var decoded = [];
-    for (var pos = 0; pos < shuffleIndices.length; pos++){
-        var newLetter = input[shuffleIndices[pos]];
-        decoded.push(newLetter);
-    } return decoded.join('');
+
+    var shell = [];
+    for (var x = 0; x < input.length; x++){
+        shell.push('null');
+    }
+    for (var curr=0; curr < input.length; curr++){
+        var letter = input[curr];
+        var index = shuffleIndices[curr];
+        shell[index] = letter;
+    }
+    return shell.join('');
 
 };
