@@ -15,7 +15,7 @@ var biggerAndEven = function(input) {
             if (input[temp] > input[curr] && input[temp]%2===0){
                 pushVal++;
             }
-        }
+        }retArray.push(pushVal);
     } return retArray;
 
 };
