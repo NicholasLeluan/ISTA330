@@ -18,7 +18,7 @@ var maxSumOfMins = function(input) {
               var one = input[x];
               var two = input[x+2];
               var min = Math.min(one,two);
-              if (min < 4){   
+              if (min <= 4){   
                      allMins += min;
               }
 
