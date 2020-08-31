@@ -11,7 +11,7 @@ output: 'hello'
 var suffleString = function(input, shuffleIndices) {
     var decoded = [];
     for (var pos = 0; pos < shuffleIndices.length; pos++){
-        var newLetter = input[shuffleIndicies[pos]];
+        var newLetter = input[shuffleIndices[pos]];
         decoded.push(newLetter);
     } return decoded.join('');
 
