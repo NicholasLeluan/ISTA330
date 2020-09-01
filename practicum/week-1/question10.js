@@ -11,10 +11,10 @@ var maxMinusMin = function(n) {
     var max = parseInt(nString.charAt(0));
     var min = parseInt(nString.charAt(0));
     for (var x = 1; x < nString.length;x++){
-        if (parseInt(nString(x))> max){
-            max = parseInt(nString(x));
-        }else if (parseInt(nString(x))< min){
-            min = parseInt(nString(x));
+        if (parseInt(nString.charAt(x))> max){
+            max = parseInt(nString.charAt(x));
+        }else if (parseInt(nString.charAt(x))< min){
+            min = parseInt(nString.charAt(x));
         }
 
     } return max - min;
