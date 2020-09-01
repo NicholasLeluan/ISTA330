@@ -16,6 +16,6 @@ var decode = function(input) {
         for (mult; mult>0; mult--){
             retList.push(code);
         }
-    }return retList;
+    } return retList;
 
 };
