@@ -13,7 +13,7 @@ var maxMinusMin = function(n) {
     for (var x = 1; x < nString.length;x++){
         if (parseInt(nString.charAt(x))> max){
             max = parseInt(nString.charAt(x));
-        }else if (parseInt(nString.charAt(x))< min){
+        }if (parseInt(nString.charAt(x))< min){
             min = parseInt(nString.charAt(x));
         }
 
