@@ -8,15 +8,6 @@ output: 7 - 2 = 5
 
 var maxMinusMin = function(n) {
     var nString = toString(n);
-    var max = parseInt(nString.charAt(0));
-    var min = parseInt(nString.charAt(0));
-    for (var x = 1; x < nString.length;x++){
-        if (parseInt(nString.charAt(x))> max){
-            max = parseInt(nString.charAt(x));
-        }if (parseInt(nString.charAt(x))< min){
-            min = parseInt(nString.charAt(x));
-        }
-
-    } return max - min;
+    console.log(nString);
 
 };
