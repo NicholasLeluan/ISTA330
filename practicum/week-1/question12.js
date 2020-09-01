@@ -23,7 +23,7 @@ var maxBalanceNumber = function(input) {
     }else if (input.charAt(curr) === ('b')){
       b++;
     }if (a = b){
-      retval++;
+      retVal++;
       a = 0;
       b = 0;
     }
