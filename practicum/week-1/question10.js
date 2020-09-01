@@ -8,5 +8,8 @@ output: 7 - 2 = 5
 
 var maxMinusMin = function(n) {
     var nums = (""+n).split("");
-    return Math.max(nums) - Math.min(nums);
+    var max = Math.max(nums);
+    var min = Math.min(nums);
+    console.log(max,min);
+    return max - min;
 };
