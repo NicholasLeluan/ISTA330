@@ -18,7 +18,7 @@ var maxBalanceNumber = function(input) {
   var subString = '';
   var a = 0;
   var b = 0;
-  for (var curr = 0; curr < input.length; cur++){
+  for (var curr = 0; curr < input.length; curr++){
     if (input.charAt(curr) === ('a')){
       a++;
       subString.concat('a');
