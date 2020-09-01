@@ -9,5 +9,13 @@ output: [5, 5, 2, 2, 2, 2]
 */
 
 var decode = function(input) {
+    var retList = [];
+    for (var x = 0; x < input.length; x+=2){
+        var mult = input.chartAt(x);
+        var code = input.charAt(x+1);
+        for (mult; mult>0; mult--){
+            retList.push(code);
+        }
+    }return retList;
 
 };
