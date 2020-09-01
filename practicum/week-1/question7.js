@@ -13,15 +13,10 @@ output: 4
 var maxSumOfMins = function(input) {
        /* pair the even indexes with even; odd with odd
        */
-       var allMins = 0;
-       for (var x = 0; x < input.length-2; x++) {
-              var one = input[x];
-              var two = input[x+2];
-              var min = Math.min(one,two);
-              if (min <= 4){   
-                     allMins += min;
-              }
-
-       } return allMins;
-
+      var input = input.sort();
+      var retVal = 0;
+      for (var x = 0; x < input.length; x += 2){
+       retval+= Math.min(input[x],input[x+1]);
+      }
+      return retVal;
 };
