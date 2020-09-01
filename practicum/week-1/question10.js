@@ -10,6 +10,5 @@ var maxMinusMin = function(n) {
     var nums = (""+n).split("");
     var max = Math.max.apply(null,nums);
     var min = Math.min.apply(null,nums);
-    console.log(max,min);
     return max - min;
 };
