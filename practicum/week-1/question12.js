@@ -19,10 +19,10 @@ var maxBalanceNumber = function(input) {
   var a = 0;
   var b = 0;
   for (var curr = 0; curr < input.length; cur++){
-    if (input.charAt(x).equals('a')){
+    if (input.charAt(curr).equals('a')){
       a++;
       subString.concat('a');
-    }else if (input.charAt(x).equals('b')){
+    }else if (input.charAt(curr).equals('b')){
       b++;
       subString.concat('b');
     }if (a = b){
