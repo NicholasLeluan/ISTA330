@@ -18,17 +18,18 @@ var maxBalanceNumber = function(input) {
   var a = 0;
   var b = 0;
   for (var curr = 0; curr < input.length; curr++){
-    console.log(input.charAt(curr));
     if (input.charAt(curr) === 'a'){
       a++;
-    }else if (input.charAt(curr) === 'b'){
+      console.log(a,retVal);
+    }if (input.charAt(curr) === 'b'){
       b++;
-    }if (a = b){
+      console.log(b,retVal);
+    }if (a == b){
       retVal++;
       var a = 0;
       var b = 0;
     }
-  }console.log(retVal);
+  }
   return retVal;
 
 };
