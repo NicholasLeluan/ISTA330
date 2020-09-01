@@ -7,7 +7,5 @@ output: 7 - 2 = 5
 */
 
 var maxMinusMin = function(n) {
-    var digits = (""+n).split("");
-    console.log(digits);
-
-};
+    var nums = (""+n).split("");
+}; return Math.max(nums) - Math.min(nums);
