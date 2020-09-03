@@ -17,9 +17,11 @@ var maxSumOfMins = function(input) {
       */
       for (var k = 0; k < input.length; k++){
              for (var i = 0; i < (input.length-i)-1; i++){
+                    if (input[j] > input[j+1]){
                     var temp = input[i];
                     input[i] = input[i+1];
                     input[i+1] = temp;
+                     }
              }
       }console.log(input);
       var retVal = 0;
