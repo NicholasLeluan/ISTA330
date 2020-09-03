@@ -21,7 +21,7 @@ var maxSumOfMins = function(input) {
                     input[i] = input[i+1];
                     input[i+1] = temp;
              }
-      }
+      }console.log(input);
       var retVal = 0;
       for (var x = 0; x < input.length; x += 2){
        retVal+= Math.min(input[x],input[x+1]);
