@@ -14,6 +14,8 @@ var maxSumOfMins = function(input) {
        /* pair the even indexes with even; odd with odd
        CANNOT USE SORT!!
        */
+      var input = input.sort();
+      /*
       for (var k = 0; k < input.length; k++){
              for (var i = 0; i < input.length; i++){
                     var temp = input[i];
@@ -21,6 +23,7 @@ var maxSumOfMins = function(input) {
                     input[i+1] = temp;
              }
       }
+      */
       var retVal = 0;
       for (var x = 0; x < input.length; x += 2){
        retVal+= Math.min(input[x],input[x+1]);
