@@ -11,18 +11,21 @@ is at least twice as much as every other number
 
 var largestNumberIsAtLeastTwice = function(input) {
    var x = 0;
-   var total = 0;
+   var y = 0;
    var max = 0;
    for (x;x<input.length;x++){
-           if (max < input[x]){
-                   max = input[x]
-           }
-           total+=input[x]
-   }
-   total = total - max;
-   if (max/total >= 2){
-           return true;
-   }else{
-           return false;
-   }
+        if (max < input[x]){
+                max = input[x]
+                var maxIndex = x
+                }
+        }
+for (y;y<input.length;y++){
+        if (y == maxIndex){
+                continue
+        }else if(!max/input[y]>=2){
+                return false;
+        } 
+
+}
+return true;
 };
