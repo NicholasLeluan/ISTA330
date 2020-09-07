@@ -20,7 +20,7 @@ var largestNumberIsAtLeastTwice = function(input) {
            total+=input[x]
    }
    total = total - max;
-   if (total/max > 2){
+   if (total/max >= 2){
            return true;
    }else{
            return false;
