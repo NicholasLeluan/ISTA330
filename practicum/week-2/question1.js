@@ -22,7 +22,7 @@ var largestNumberIsAtLeastTwice = function(input) {
 for (y;y<input.length;y++){
         if (y == maxIndex){
                 continue
-        }else if(!max/input[y]>=2){
+        }else if(max/input[y]<2){
                 return false;
         } 
 
