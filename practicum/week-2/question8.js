@@ -32,7 +32,6 @@ var d_integer = function(input) {
             }
         }
     }
-    console.log(maxVals);
     if (maxVals.length === 0){
         return -1;
     }else{
