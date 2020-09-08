@@ -14,13 +14,14 @@ so there are two groups with the largest size.
 
 var largestGroupsCount = function(n) {
     var groupList = [];
+    var mult = 1;
     for (var x = 0; x < n; x++){
         if (x > 8){
             temp = 0
             x = 0;
-            groupList[x].push(temp);
+            groupList[x-(8*mult)].push(temp);
         }else{
-            groupList.push(x);
+            groupList.push([x]);
         }
     } console.log(groupList);
 
