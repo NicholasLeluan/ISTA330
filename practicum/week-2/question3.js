@@ -23,7 +23,7 @@ var PascalTriangle = function(n) {
   if (n > 3){
     for (var x = 2; x < n; x++){
       retPas[x] = [1];
-      for (var y = 1; y <= row -1; y++){
+      for (var y = 1; y <= x - 1; y++){
         retPas[x][y] = retPas[x-1][y] + retPas[x-1][y-1];
         retPas[x].push(1)
       }
