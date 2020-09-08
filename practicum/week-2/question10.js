@@ -35,7 +35,7 @@ var minPairs = function(input) {
 
         }
         for (var k = 0 ; k < minPairs; k ++){
-            minPairs[k] = minPairs[k].sort()
+            minPairs[k] = minPairs[k].sort();
 
         }
         console.log(minPairs);
