@@ -21,8 +21,8 @@ var d_count = function(input1, input2, d) {
     for (var x = 0; x < min; x++){
         var a = input1[x];
         var b = input2[x];
-        var net = Math.abs(input1-input2);
-        if (net > d){
+        var net = Math.abs(a-b);
+        if (net <= d){
             retCount++;
         }
     }
