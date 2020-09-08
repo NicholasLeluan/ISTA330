@@ -34,11 +34,11 @@ var minPairs = function(input) {
             }
 
         }
-        console.log(minPairs);
         for (var k = 0 ; k < minPairs; k ++){
-            minPairs[k] = minPairs.sort()
+            minPairs[k] = minPairs[k].sort()
 
         }
+        console.log(minPairs);
     } return minPairs;
 
 };
