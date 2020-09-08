@@ -12,14 +12,14 @@ output: 2
 */
 
 var m_element = function(input) {
-    var m = (n/2);
+    var m = (input/2);
     var dict = {};
     for (var i = 0; i < input.length; i++){
         if (input[i] in dict){
             dict[input[i]] = dict[input[i]] + 1
         }
         else{
-            dict[input] = 1;
+            dict[input[i]] = 1;
         }
 
     }
