@@ -30,7 +30,7 @@ var m_element = function(input) {
         }
     }
     if (max >= m){
-        return retVal;
+        return parseInt(retVal);
     }
     else{
         return -1;
