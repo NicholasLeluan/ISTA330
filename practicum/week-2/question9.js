@@ -30,7 +30,7 @@ var largestGroupsCount = function(n) {
     } 
     var retCount = 0;
     for (var last = 0; last < groupList.length; last++){
-        if (groupList.length === retMax){
+        if (groupList.length == retMax){
             retCount++;
         }
     } return retCount;
