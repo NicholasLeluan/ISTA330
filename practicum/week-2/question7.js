@@ -27,7 +27,7 @@ var transpose = function(M) {
     }
     for (var row = 0; row < rows; row++){
         for (var col = 0; col < cols; col++){
-            retRepose[row][col].push(M[row][col])
+            retRepose[row].push(M[row][col])
         }
 
     }
