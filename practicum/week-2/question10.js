@@ -24,6 +24,7 @@ var minPairs = function(input) {
             var diff = Math.abs(b - a);
             if (diff <= min){
                 if (diff < min){
+                    min = diff;
                     var minPairs = [];
                     minPairs.push([a,b]);
                 }else{
