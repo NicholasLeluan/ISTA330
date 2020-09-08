@@ -30,7 +30,10 @@ var m_element = function(input) {
         }
     }
     if (max >= m){
-        return x;
+        return retVal;
+    }
+    else{
+        return -1;
     }
 
 };
