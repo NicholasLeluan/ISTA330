@@ -39,7 +39,7 @@ var d_integer = function(input) {
         var retMax = 0;
         for (var c = 0; c < maxVals.length; c++){
             if (maxVals[c] > retMax){
-                retmax = maxVals[c]
+                retMax = maxVals[c]
             }
         }return retMax;
     } 
