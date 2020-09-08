@@ -20,7 +20,7 @@ var minPairs = function(input) {
     for (var x = 0; x < input.length; x++){
         for (var y = 1; y < (input.length - x)-1; y++){
             var a = input[x];
-            var b = input[y];
+            var b = input[y+x];
             var diff = Math.abs(b - a);
             if (diff <= min){
                 if (diff < min){
