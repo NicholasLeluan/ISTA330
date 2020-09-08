@@ -13,7 +13,7 @@ Example: input: [-12,3,-1,5,-2,1,-7]
          var max = 0;
      for (var k = 0; k < input.length; k ++){
              var intFull = 0;
-             var length = input.length;
+             var length = input.length-k;
              for (var m = length; m >= 0; m--){
                      var arraySlice = input.slice(k,m);
                      console.log(k,m);
