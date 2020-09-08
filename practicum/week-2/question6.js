@@ -21,8 +21,13 @@ var m_element = function(input) {
         else{
             dict[input[i]] = 1;
         }
-
     }
-    console.log(dict);
+    var max = 0;
+    for (var x in dict){
+        if (dict[x] > max){
+            max = dict[x];
+        }
+    }
+    return max;
 
 };
