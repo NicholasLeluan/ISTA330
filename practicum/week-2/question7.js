@@ -29,7 +29,7 @@ var transpose = function(M) {
         }
         retRepose.push(newRow);
     }
-    console.log(retRepose)
+    return retRepose;
 
 
 
