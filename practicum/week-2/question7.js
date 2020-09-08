@@ -25,6 +25,12 @@ var transpose = function(M) {
     for (var newRow = 0; newRow < rows; newRow++){
         retRepose.push([]);
     }
+    for (var row = 0; row < rows; row++){
+        for (var col = 0; col < cols; col++){
+            retRepose[row][col].push(M[row][col])
+        }
+
+    }
     console.log(retRepose);
 
 
