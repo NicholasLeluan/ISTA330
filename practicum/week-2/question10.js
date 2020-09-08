@@ -27,7 +27,7 @@ var minPairs = function(input) {
                     min = diff;
                     var minPairs = [];
                     if (a < b){
-                        minsPairs.push([a,b]);
+                        minPairs.push([a,b]);
                     }else{
                     minPairs.push([b,a]);
                     }
