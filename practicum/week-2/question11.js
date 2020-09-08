@@ -14,5 +14,9 @@ output: 1
 */
 
 var d_count = function(input1, input2, d) {
+    var lengthA = input1.length;
+    var lengthB = input2.length;
+    return Math.abs(input1-input2);
+
 
 };
