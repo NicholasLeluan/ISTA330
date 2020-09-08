@@ -22,10 +22,17 @@ var largestGroupsCount = function(n) {
             groupList.push([x+1]);
         }
     } var retMax = 0;
+      var retVal = 0; 
     for (var check = 0; check < groupList.length; check++){
-        if (groupList.length < retMax){
+        if (groupList.length > retMax){
             retMax = groupList.length;
         }
-    } return retMax;
+    } 
+    var retCount = 0;
+    for (var last = 0; last < groupList.length; last++){
+        if (groupList.length === retMax){
+            retCount++;
+        }
+    } return retCount;
 
 };
