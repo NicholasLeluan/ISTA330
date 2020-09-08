@@ -22,17 +22,14 @@ var transpose = function(M) {
     cols = temp
 
     retRepose = [];
-    for (var newRow = 0; newRow < rows; newRow++){
-        retRepose.push([]);
-    }
     for (var row = 0; row < rows; row++){
-        for (var col = 0; col < cols; col++){
-            retRepose[row].push(M[row][col])
+        var newRow = [];
+        for (var num = 0; num < cols; num++){
+            newRow.push(M[num][row]);
         }
-
+        retRepose.push(newRow);
     }
-    console.log(retRepose);
-
+    console.log(retRepose)
 
 
 
