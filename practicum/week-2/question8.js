@@ -41,8 +41,8 @@ var d_integer = function(input) {
             if (maxVals[c] > retMax){
                 retmax = maxVals[c]
             }
-        }
-    } return retMax;
+        }return retMax;
+    } 
 
 
 };
