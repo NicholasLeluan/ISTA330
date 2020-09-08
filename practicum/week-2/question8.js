@@ -36,8 +36,13 @@ var d_integer = function(input) {
     if (maxVals.length === 0){
         return -1;
     }else{
-        return Math.max(maxVals);
-    }
+        var retMax = 0;
+        for (var c = 0; c < maxVals.length; c++){
+            if (maxVals[c] > retMax){
+                retmax = maxVals[c]
+            }
+        }
+    } return maxVals;
 
 
 };
