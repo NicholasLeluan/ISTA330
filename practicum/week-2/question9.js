@@ -28,6 +28,7 @@ var largestGroupsCount = function(n) {
             retMax = groupList.length;
         }
     } 
+    console.log(retMax);
     var retCount = 0;
     for (var last = 0; last < groupList.length; last++){
         if (groupList[last].length == retMax){
