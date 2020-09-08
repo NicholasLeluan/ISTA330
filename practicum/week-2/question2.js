@@ -27,6 +27,6 @@ Example: input: [-12,3,-1,5,-2,1,-7]
 
              }
 
-     }return input.slice(k,m);
+     }return input.slice(start,end);
     
  };
