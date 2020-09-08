@@ -28,7 +28,7 @@ var d_integer = function(input) {
         if (dict[val] > max){
             max = dict[val]
             if (val == dict[val]){
-                maxVals.push(val);
+                maxVals.push(paresInt(val));
             }
         }
     }
