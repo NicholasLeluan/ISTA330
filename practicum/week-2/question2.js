@@ -23,6 +23,7 @@ Example: input: [-12,3,-1,5,-2,1,-7]
                      console.log(arraySlice);
                      console.log(sliceSum);
                      if (sliceSum > max){
+                             max = sliceSum;
                              var start = k
                              var end = m
                              var retVal = sliceSum;
@@ -30,6 +31,6 @@ Example: input: [-12,3,-1,5,-2,1,-7]
 
              }
 
-     }return retVal;
+     }return max;
     
  };
