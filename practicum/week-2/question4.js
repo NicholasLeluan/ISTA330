@@ -13,5 +13,14 @@ Example:
 */
 
 var hasDuplicates = function(input) {
+    var checkedNums = []
+    for (var x = 0; x < input.length; x++){
+        if (checkedNums.includes(input[x])){
+            return false;
+        }else{
+            checkedNums.push(input[x]);
+        }
+    }
+    return true;
 
 };
