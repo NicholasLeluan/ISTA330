@@ -42,7 +42,7 @@ var d_integer = function(input) {
                 retmax = maxVals[c]
             }
         }
-    } return maxVals;
+    } return retMax;
 
 
 };
