@@ -28,11 +28,8 @@ var m_element = function(input) {
             max = dict[x];
         }
     }
-    if (max > m){
+    if (max >= m){
         return max;
-    }
-    else{
-        return undefined;
     }
 
 };
