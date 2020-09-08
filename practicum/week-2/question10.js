@@ -22,7 +22,6 @@ var minPairs = function(input) {
             var a = input[x];
             var b = input[y+x];
             var diff = Math.abs(b - a);
-            console.log(a,b);
             if (diff <= min){
                 if (diff < min){
                     min = diff;
@@ -35,6 +34,6 @@ var minPairs = function(input) {
             }
 
         }
-    }
+    }console.log(minPairs);
 
 };
