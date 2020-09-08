@@ -9,5 +9,22 @@ Given n, calculate F(n).
 */
 
 var F = function(n) {
+    var retFibo = [];
+    if (n > 1){
+        retFibo.push(1);
+    }
+    if (n > 2){
+        retFibo.push(1);
+    }
+    for (var num = 2; num < n -2; n++){
+        var a = retFibo[num-2];
+        var b = retFibo[num-1];
+        var c = a + b;
+        retFibo.push(c);
+
+    }
+    console.log(retFibo);
+    return retFibo;
+    
 
 };
