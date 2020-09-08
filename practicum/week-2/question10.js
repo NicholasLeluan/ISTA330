@@ -18,8 +18,7 @@ output: [[-5, -4], [23, 24]]
 var minPairs = function(input) {
     var min = 9999999;
     for (var x = 0; x < input.length; x++){
-        var tempLen = input.slice(x).length;
-        for (var y = 1; y < tempLen; y++){
+        for (var y = 1; y < input.length - x; y++){
             var a = input[x];
             var b = input[y+x];
             var diff = Math.abs(b - a);
