@@ -12,7 +12,7 @@ output: 2
 */
 
 var m_element = function(input) {
-    var m = (input/2);
+    var m = (input.length/2);
     var dict = {};
     for (var i = 0; i < input.length; i++){
         if (input[i] in dict){
