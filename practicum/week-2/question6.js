@@ -25,11 +25,12 @@ var m_element = function(input) {
     var max = 0;
     for (var x in dict){
         if (dict[x] > max){
+            var retVal = x
             max = dict[x];
         }
     }
     if (max >= m){
-        return max;
+        return x;
     }
 
 };
