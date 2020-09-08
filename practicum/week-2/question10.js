@@ -26,17 +26,24 @@ var minPairs = function(input) {
                 if (diff < min){
                     min = diff;
                     var minPairs = [];
-                    minPairs.push([a,b]);
+                    if (a < b){
+                        minsPairs.push([a,b]);
+                    }else{
+                    minPairs.push([b,a]);
+                    }
                 }else{
                 min = diff;
-                minPairs.push([a,b]);
+                if (a < b){
+                    minPairs.push([a,b]);
+                }else{
+                minPairs.push([b,a]);
+                }
                 }
             }
 
         }
         for (var k = 0 ; k < minPairs; k ++){
             minPairs[k] = minPairs[k].sort();
-
         }
     } 
     console.log(minPairs);
