@@ -23,7 +23,6 @@ var F = function(n) {
         retFibo.push(c);
 
     }
-    console.log(retFibo);
     return retFibo.pop();
     
 
