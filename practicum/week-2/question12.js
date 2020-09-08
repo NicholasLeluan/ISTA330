@@ -16,7 +16,7 @@ var F = function(n) {
     if (n > 2){
         retFibo.push(1);
     }
-    for (var num = 2; num < n - 2; num++){
+    for (var num = 2; num < n; num++){
         var a = retFibo[num-2];
         var b = retFibo[num-1];
         var c = a + b;
@@ -24,7 +24,7 @@ var F = function(n) {
 
     }
     console.log(retFibo);
-    return retFibo;
+    return retFibo.pop();
     
 
 };
