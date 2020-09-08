@@ -18,7 +18,7 @@ Example: input: [-12,3,-1,5,-2,1,-7]
                      var arraySlice = input.slice(k,m);
                      console.log(k,m);
                      var sliceSum = 0;
-                     for (var x = 0; x < sliceSum.length; x ++){
+                     for (var x = 0; x < arraySlice.length; x ++){
                              sliceSum += arraySlice[x]
                      }
                      console.log(arraySlice);
