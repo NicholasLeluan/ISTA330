@@ -16,10 +16,17 @@ Example: input: [-12,3,-1,5,-2,1,-7]
              var length = input.length;
              for (var m = length; m >= 0; m--){
                      var arraySlice = input.slice(k,m);
-                     console.log(k);
-                     console.log(arraySlice);
+                     var sliceSum = 0;
+                     for (var x = 0; x < sliceSum.length; x ++){
+                             sliceSum += sliceSum[x]
+                     }
+                     if (sliceSum > max){
+                             var start = k
+                             var end = m
+                     }
+
              }
 
-     }
+     }return input.slice(k,m);
     
  };
