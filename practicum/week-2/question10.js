@@ -21,16 +21,14 @@ var minPairs = function(input) {
         for (var y = 0; y < input.length - x; y++){
             var a = input[x];
             var b = input[y];
-            if (a < b){
-                var diff = Math.abs(b - a);
-                if (diff <= min){
-                    if (diff < min){
-                        var minPairs = [];
-                        minPairs.push([a,b]);
-                    }else{
-                    min = diff;
+            var diff = Math.abs(b - a);
+            if (diff <= min){
+                if (diff < min){
+                    var minPairs = [];
                     minPairs.push([a,b]);
-                    }
+                }else{
+                min = diff;
+                minPairs.push([a,b]);
                 }
             }
 
