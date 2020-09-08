@@ -19,15 +19,15 @@ output: true
 var isMonotonic = function(input) {
     var i = input[0];
     var j = input[1];
-    if (i<=j){
+    if (i <= j){
         for (var curr = 2; curr < input.length - 2; curr++){
-            if (input[curr] > input[curr+1]){
+            if (input[curr] < input[curr+1]){
                 return false;
             }
         }
     }else if (i >= j){
         for (var curr = 2; curr < input.lenght-2; curr++){
-            if (input[curr] < input [curr+1]){
+            if (input[curr] > input [curr+1]){
                 return false;
             }
         }
