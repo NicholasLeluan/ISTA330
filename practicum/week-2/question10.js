@@ -34,6 +34,7 @@ var minPairs = function(input) {
             }
 
         }
+        console.log(minPairs);
     }return minPairs;
 
 };
