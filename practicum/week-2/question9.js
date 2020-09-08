@@ -21,6 +21,11 @@ var largestGroupsCount = function(n) {
         }else{
             groupList.push([x+1]);
         }
-    } console.log(groupList);
+    } var retMax = 0;
+    for (var check = 0; check < groupList.length; check++){
+        if (groupList.length < retMax){
+            retMax = groupList.length;
+        }
+    } return retMax;
 
 };
