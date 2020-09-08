@@ -19,9 +19,9 @@ Example: input: [-12,3,-1,5,-2,1,-7]
                      console.log(k,m);
                      var sliceSum = 0;
                      for (var x = 0; x < sliceSum.length; x ++){
-                             sliceSum += sliceSum[x]
+                             sliceSum += arraySlice[x]
                      }
-                     console.log(sliceSum);
+                     console.log(arraySlice);
                      if (sliceSum > max){
                              var start = k
                              var end = m
