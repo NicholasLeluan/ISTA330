@@ -29,10 +29,10 @@ var m_element = function(input) {
         }
     }
     if (max > m){
-        return true;
+        return max;
     }
     else{
-        return false;
+        return undefined;
     }
 
 };
