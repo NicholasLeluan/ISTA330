@@ -15,7 +15,7 @@ so there are two groups with the largest size.
 var largestGroupsCount = function(n) {
     var groupList = [];
     var mult = 1;
-    for (var x = 0; x < n; x++){
+    for (var x = 0; x < n+1; x++){
         if (x > 9){
             groupList[x-(10*mult)].push(x);
         }else{
