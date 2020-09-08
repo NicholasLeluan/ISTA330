@@ -28,7 +28,11 @@ var m_element = function(input) {
             max = dict[x];
         }
     }
-    console.log(max);
-    return max;
+    if (max > m){
+        return true;
+    }
+    else{
+        return false;
+    }
 
 };
