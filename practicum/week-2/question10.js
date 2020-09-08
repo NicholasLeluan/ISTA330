@@ -19,9 +19,9 @@ var minPairs = function(input) {
     var min = 9999999;
     for (var x = 0; x < input.length; x++){
         var tempLen = input.slice(x).length;
-        for (var y = x+1; y <= tempLen; y++){
+        for (var y = 1; y < tempLen; y++){
             var a = input[x];
-            var b = input[y];
+            var b = input[y+x];
             var diff = Math.abs(b - a);
             console.log(a,b);
             if (diff <= min){
