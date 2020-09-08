@@ -24,11 +24,11 @@ var m_element = function(input) {
     }
     var max = 0;
     for (var x in dict){
-        console.log(dict[x]);
         if (dict[x] > max){
             max = dict[x];
         }
     }
+    console.log(max);
     return max;
 
 };
