@@ -16,9 +16,17 @@ output: 1
 var d_count = function(input1, input2, d) {
     var lengthA = input1.length;
     var lengthB = input2.length;
-    console.log(input1);
-    console.log(input2);
-    return Math.abs(lengthA-lengthB);
+    var min = Math.min(lengthA, lengthB);
+    var retCount = 0;
+    for (var x = 0; x < min; x++){
+        var a = input1[x];
+        var b = input2[x];
+        var net = Math.abs(input1-input2);
+        if (net > d){
+            retCount++
+        }
+    }
+    return retCount;
 
 
 };
