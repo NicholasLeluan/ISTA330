@@ -27,7 +27,7 @@ var d_integer = function(input) {
     for (var val in dict){
         if (dict[val] > max){
             max = dict[val]
-            if (val === dict[val]){
+            if (val == dict[val]){
                 maxVals.push(val);
             }
         }
