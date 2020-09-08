@@ -22,7 +22,7 @@ var d_count = function(input1, input2, d) {
         var a = input1[x];
         var b = input2[x];
         var net = Math.abs(a-b);
-        if (net <= d){
+        if (net < d){
             retCount++;
         }
     }
