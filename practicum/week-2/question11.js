@@ -16,6 +16,8 @@ output: 1
 var d_count = function(input1, input2, d) {
     var lengthA = input1.length;
     var lengthB = input2.length;
+    console.log(input1);
+    console.log(input2);
     return Math.abs(lengthA-lengthB);
 
 
