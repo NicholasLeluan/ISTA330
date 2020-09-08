@@ -17,7 +17,7 @@ var largestGroupsCount = function(n) {
     var mult = 1;
     for (var x = 0; x < n; x++){
         if (x > 8){
-            groupList[x-(9*mult)].push(x);
+            groupList[x-(8*mult)].push(x);
         }else{
             groupList.push([x+1]);
         }
