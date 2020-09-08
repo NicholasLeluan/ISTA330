@@ -13,5 +13,22 @@ output: [
 */
 
 var PascalTriangle = function(n) {
-return [[1],[1,1],[1,2,1],[1,3,3,1]];
+  var retPas = [];
+  if (n > 1){
+    retPas.push([1]);
+  }
+  if (n > 2){
+    retPas.push([1,1]);
+  }
+  if (n > 3){
+    for (var x = 2; x < n; x++){
+      retPas[x] = [1];
+      for (var y = 1; i <= row -1; y++){
+        retPas[x][y] = retPas[x-1][y] + retPas[x-1][y-1];
+        retPas[x].push(1)
+      }
+
+
+    }
+  }return retPas;
 };
