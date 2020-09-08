@@ -27,7 +27,7 @@ var isMonotonic = function(input) {
         }
     }else if (i >= j){
         for (var curr = 2; curr < input.lenght-2; curr++){
-            if (input[curr] > input [curr+1]){
+            if (input[curr] > input [curr-1]){
                 return false;
             }
         }
