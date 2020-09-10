@@ -16,6 +16,8 @@ var kStepAway = function(input, k) {
         }if (input[step] === 1){
             if (!zeros === k){
                 return false;
+            }else{
+                zeros = 0;
             }
         }if (input[step] === 0){
             zeros++;
