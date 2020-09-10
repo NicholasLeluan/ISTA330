@@ -11,6 +11,22 @@ Example: input: [19,3,2,10,8,2,3,5]
           */
 
  var findDuplicates = function(input) {
-     
+     var dict = {};
+     var retArray = [];
+     for (var x = 0; x < input.length; x++){
+         if (input[x] in dict){
+             dict[input[x]] = dict[input[1]] + 1;
+         }
+         else{
+             dict[input[x]] = 1;
+         }
+     }
+     for (var key in dict){
+         if(key===2){
+            retArray.push(key);
+         }
+     }
+     console.log(retArray);
+     return retArray;
     
  };
