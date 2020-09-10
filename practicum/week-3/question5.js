@@ -11,7 +11,6 @@ output: [24,12,8,6]
 
 var productOfOthers = function(input) {
     var retArr = [];
-    var tempInput = input;
     for (var curr = 0; curr < input.length; curr++){
         var tempInput = input;
         var multArr = tempInput.splice(curr,1,1);
