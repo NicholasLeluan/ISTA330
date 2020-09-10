@@ -14,6 +14,7 @@ var kStepAway = function(input, k) {
             var zeros = 0;
             continue;
         }if (input[step] === 1){
+            console.log('found a 1/ Zeros:', zeros);
             if (!zeros >= k){
                 return false;
             }else{
