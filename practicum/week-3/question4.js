@@ -24,8 +24,8 @@ var powerSet = function(input) {
   var length = input.length;
   for (var x = 0; x < length; x++){
     for (var y = 1; y < (length - x)-1;y++){
-      console.log(slice);
       var slice = input.slice(x,y);
+      console.log(slice);
       if (!slice in retVal){
         retVal.push(slice);
       }
