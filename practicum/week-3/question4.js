@@ -23,7 +23,7 @@ var powerSet = function(input) {
   var retVal = [[]];
   var length = input.length;
   for (var x = 0; x < length; x++){
-    for (var y = 1; y < (lenght - x)-1;y++){
+    for (var y = 1; y < (length - x)-1;y++){
       console.log(slice);
       var slice = input.slice(x,y);
       if (!slice in retVal){
