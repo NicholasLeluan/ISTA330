@@ -29,7 +29,7 @@ var howManyTeams = function(input) {
                         var soldier2 = input[y];
                         var z = 2;
                         for (x+z; z < (input.length -y)-1;z++){
-                                var soldier3 = input[z]
+                                var soldier3 = input[z];
                                 console.log(soldier1,soldier2,soldier3);
                         }
 
