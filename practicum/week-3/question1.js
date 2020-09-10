@@ -40,5 +40,6 @@ var howManyTeams = function(input) {
                 }
                 
         }
+        return teams;
    
 };
