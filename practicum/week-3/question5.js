@@ -13,9 +13,10 @@ var productOfOthers = function(input) {
     var retArr = [];
     var tempInput = input;
     for (var curr = 0; curr < input.length; curr++){
-        var multArr = input.splice(curr,1,1);
+        var tempInput = input;
+        var multArr = tempInput.splice(curr,1,1);
         var pushNum = 1;
-        console.log(input);
+        console.log(tempInput);
         for (var num = 0; num < multArr.length; num++){
             pushNum = pushNum * multArr[num];
             }
