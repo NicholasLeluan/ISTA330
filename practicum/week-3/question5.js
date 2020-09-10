@@ -10,6 +10,15 @@ output: [24,12,8,6]
 */
 
 var productOfOthers = function(input) {
+    var retArr = [];
+    for (var curr = 0; curr < input.length; curr++){
+        var multArr = input.splice(curr,1,1);
+        var pushNum = 1;
+        for (var num = 0; num < multArr.length; num++){
+            pushNum *= multArr[num];
+            }
+        retArr.push(pushNum);
+    } return retArr;
 
 };
 
