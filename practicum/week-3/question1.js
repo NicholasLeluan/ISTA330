@@ -30,6 +30,7 @@ var howManyTeams = function(input) {
                         var z = 2;
                         for (y+x+z; z < (input.length - x -y)-2;z++){
                                 var soldier3 = input[z]
+                                console.log(solider1,soldier2,soldier3);
                                 if (soldier1 < soldier2 && soldier2 < soldier3){
                                         teams++;
                                 
