@@ -26,7 +26,7 @@ Example: input: [19,3,2,10,8,2,3,5]
             retArray.push(key);
          }
      }
-     console.log(retArray);
+     console.log(dict);
      return retArray;
     
  };
