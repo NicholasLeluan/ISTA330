@@ -17,6 +17,7 @@ var productOfOthers = function(input) {
         var pushNum = 1;
         console.log(tempInput);
         for (var num = 0; num < multArr.length; num++){
+            console.log("pushNum: ",pushNum,"tempInput[num]: ",tempInput[num])
             pushNum = pushNum * tempInput[num];
             }
         retArr.push(pushNum);
