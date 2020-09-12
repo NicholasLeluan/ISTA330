@@ -19,9 +19,9 @@ Return the number of teams you can form given the conditions. (soldiers can be p
 */
 
 var howManyTeams = function(input) {
-        for (var i = 0;i < input.length();i++){
-                for (var j = 1; j < input.length() - i; j++){
-                        for (var k = 2; k < input.length() -i -j;k++){
+        for (var i = 0;i < input.length;i++){
+                for (var j = 1; j < input.length - i; j++){
+                        for (var k = 2; k < input.length -i -j;k++){
                                 var platoon = [input[i],input[j],input[k]]
                                 console.log(platoon);
                         }
