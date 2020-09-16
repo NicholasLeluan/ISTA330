@@ -11,5 +11,26 @@ Example:
 */
 
 var isCrossing = function(s) {
+    var iter = s.split("");
+    var north = 0;
+    var south = 0;
+    var east = 0;
+    var west = 0;
+    for (var dir = 0; dir < iter.length; dir++){
+        if (s[dir] == "N"){
+            north++;
+        }else if (s[dir] == "S"){
+            south++;
+        }else if (s[dir] == "E"){
+            east++;
+        }else if (s[dir] == "W"){
+            west++;
+        }
+    }
+    if (Math.abs(north - south) >= 2 || Math.abs(east - west) >= 2){
+        return true;
+    }else{
+        return false;
+    }
 
 };
