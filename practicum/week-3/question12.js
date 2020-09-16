@@ -28,9 +28,9 @@ var isCrossing = function(s) {
         }
     }
     if (Math.abs(north - south) >= 2 || Math.abs(east - west) >= 2){
-        return true;
-    }else{
         return false;
+    }else{
+        return true;
     }
 
 };
