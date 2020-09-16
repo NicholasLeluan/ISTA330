@@ -26,5 +26,6 @@ var minMoves = function(A) {
         }
     }
     console.log(visited);
+    return totalIncrements;
 
 };
