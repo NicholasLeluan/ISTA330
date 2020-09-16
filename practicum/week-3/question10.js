@@ -11,5 +11,17 @@ output: true
 */
 
 var isPalindrome = function(s) {
+    if (s.length == 0){
+        return true;
+    } 
+    else{
+        if (s.charAt(0) === s.charAt(s.length-1)){
+            var temp = s.slice(1,-1);
+            return isPalindrome(temp);
+        }
+        else{
+            return false;
+        }
+    }
 
 };
