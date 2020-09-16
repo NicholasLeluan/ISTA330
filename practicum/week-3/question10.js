@@ -17,12 +17,13 @@ var isPalindrome = function(s) {
     else{
         var zero = 0;
         var end = s.length - 1;
+        var letters = /^[A-Za-z]+$/;
         var first = s.charAt(zero).toUpperCase();
         var last = s. charAt(end).toUpperCase();
-        while (!first.isAlpha()){
+        while (!(first.value.match(letters))){
             first = s.charAt(zero+1);
         }
-        while (!last.isAlpha()){
+        while (!(last.value.match(letters))){
             last = s.charAt(end-1).toUpperCase();
         }
         if (s.charAt(first) == s.charAt(last)){
