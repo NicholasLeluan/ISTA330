@@ -15,7 +15,7 @@ var isPalindrome = function(s) {
         return true;
     } 
     else{
-        if (s.charAt(0).toUpperCase() === s.charAt(s.length-1).toUpperCase()){
+        if (s.charAt(0).toUpperCase() == s.charAt(s.length-1).toUpperCase()){
             var temp = s.slice(1,-1);
             return isPalindrome(temp);
         }
