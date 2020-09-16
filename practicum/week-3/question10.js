@@ -15,7 +15,17 @@ var isPalindrome = function(s) {
         return true;
     } 
     else{
-        if (s.charAt(0).toUpperCase() == s.charAt(s.length-1).toUpperCase()){
+        var zero = 0;
+        var end = s.length - 1;
+        var first = s.charAt(zero).toUpperCase();
+        var last = s. charAt(end).toUpperCase();
+        while (!first.isAlpha()){
+            first = s.charAt(zero+1);
+        }
+        while (!last.isAlpha()){
+            last = s.charAt(end-1).toUpperCase();
+        }
+        if (s.charAt(first) == s.charAt(last)){
             var temp = s.slice(1,-1);
             console.log(temp);
             return isPalindrome(temp);
