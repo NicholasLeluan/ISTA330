@@ -20,10 +20,10 @@ var isPalindrome = function(s) {
         var letters = "!@#$%^&*().";
         var first = s.charAt(zero).toUpperCase();
         var last = s. charAt(end).toUpperCase();
-        while (!(first.includes(letters))){
+        if(first.includes(letters)){
             first = s.charAt(zero+1);
         }
-        while (!(last.includes(letters))){
+        if(last.includes(letters)){
             last = s.charAt(end-1).toUpperCase();
         }
         if (s.charAt(first) == s.charAt(last)){
