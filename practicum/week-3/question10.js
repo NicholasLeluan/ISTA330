@@ -17,7 +17,7 @@ var isPalindrome = function(s) {
     else{
         var zero = 0;
         var end = s.length - 1;
-        var letters = "!@#$%^&*().-,";
+        var letters = "!@#$^&*().-,";
         var first = s.charAt(zero).toUpperCase();
         var last = s. charAt(end).toUpperCase();
         if(letters.includes(first)){
