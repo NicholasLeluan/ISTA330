@@ -26,9 +26,9 @@ var isPalindrome = function(s) {
         if(letters.includes(last)){
             last = s.charAt(end-1).toUpperCase();
         }
+        console.log(first,last);
         if (s.charAt(first) == s.charAt(last)){
             var temp = s.slice(1,-1);
-            console.log(temp);
             return isPalindrome(temp);
         }
         else{
