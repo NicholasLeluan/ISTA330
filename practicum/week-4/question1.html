@@ -65,6 +65,9 @@
            changeDiv.innerHTML += flowers[flower].name;
            changeDiv.innerHTML += "</td>";
            count++;
+           if (count % 5 == 0){
+               changeDiv.innerHTML += "</tr>";
+           }
            }
 
     </script>
