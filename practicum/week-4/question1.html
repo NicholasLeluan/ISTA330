@@ -56,15 +56,15 @@
        var count = 1;
        for (var flower = 0; flower < flowers.length; flower++){
            if (count % 4 == 0 || flower == 0){
-               changeDiv.innerHTML += "<th>";
+               changeDiv.innerHTML += "<tr>";
            }
            changeDiv.innerHTML += "<td>";
-           changeDiv.innerHTML += "<img src ='images/"+flowers[flower].picture+"'><br>";
-           changeDiv.innerHTML += flowers[flower].name;
+           changeDiv.innerHTML += "<img src ='images/"+flowers[flower].picture+"'>";
+           //changeDiv.innerHTML += flowers[flower].name;
            changeDiv.innerHTML += "</td>";
            count++;
            if (count % 5 == 0){
-               changeDiv.innerHTML += "</th>";
+               changeDiv.innerHTML += "</tr>";
            }
            }
 
