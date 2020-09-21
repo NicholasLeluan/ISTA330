@@ -60,8 +60,8 @@
        var count = 1;
        for (var flower = 0; flower < flowers.length; flower++){
            retString += "<td>";
-           retString += "<img src ='images/"+flowers[flower].picture+"'>";
-           //changeDiv.innerHTML += flowers[flower].name;
+           retString += "<img src ='images/"+flowers[flower].picture+"'><br>";
+           retString += flowers[flower].name;
            retString += "</td>";
            count++;
            if (count % 5 == 0){
