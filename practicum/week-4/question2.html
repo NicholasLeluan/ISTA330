@@ -112,11 +112,10 @@
             var retString = "";
             printFlowers(array);
         }
-        var changeDiv = document.getElementById("flowersDiv");
-
         printFlowers(flowers);
 
-        function printFlowers(array){
+        function printFlowers(array,div){
+            var changeDiv = document.getElementById("flowersDiv");
             var retString = "";
             retString += "<table border = 1><tr>"
             var count = 1;
@@ -131,7 +130,7 @@
                 }
                 }
             retString += "</table>";
-            changeDiv.innerHTML += retString;
+            changeDiv.innerHTML = retString;
         }
 
     
