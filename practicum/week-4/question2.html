@@ -100,13 +100,16 @@
             rose,
             waterlily
         ];
+        function sortFlowers(clicked){
+            console.log(clicked);
+        }
         var changeDiv = document.getElementById("flowersDiv");
         var retString = "";
         retString += "<table border = 1><tr>"
         var count = 1;
         for (var flower = 0; flower < flowers.length; flower++){
             retString += "<td style='text-align:center'>";
-            retString += "<img src ='images/"+flowers[flower].picture+"' onclick='sortFlowers()'><br>";
+            retString += "<img src ='images/"+flowers[flower].picture+"' onclick='sortFlowers("+flowers[flower].name+")'><br>";
             retString += flowers[flower].name;
             retString += "</td>";
             count++;
