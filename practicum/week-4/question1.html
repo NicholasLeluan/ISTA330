@@ -56,6 +56,7 @@
        var count = 1;
        for (var flower = 0; flower < flowers.length; flower++){
            if (count % 4 == 0 || flower == 0){
+               changeDiv.innerHTML += "NEW ROW";
                changeDiv.innerHTML += "<tr>";
            }
            changeDiv.innerHTML += "<td>";
