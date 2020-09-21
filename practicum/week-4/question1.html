@@ -14,9 +14,11 @@
         For each flower, you should show the image
         and under the image display its name.
     </div>
+    <table>
     <div id='flowersDiv'>
         
     </div>
+    </table>
     <script>
         /*
            Using the array flowers below, 
@@ -53,7 +55,7 @@
        ];
 
        var changeDiv = document.getElementById("flowersDiv");
-       changeDiv.innerHTML += "<table border = 1><tr>"
+       //changeDiv.innerHTML += "<table border = 1><tr>"
        var count = 1;
        for (var flower = 0; flower < flowers.length; flower++){
            changeDiv.innerHTML += "<td>";
@@ -66,7 +68,7 @@
                changeDiv.innerHTML += "</tr><tr>";
            }
            }
-        changeDiv.innerHTML += "</table>";
+        //changeDiv.innerHTML += "</table>";
 
     </script>
 </body>
