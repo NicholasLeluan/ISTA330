@@ -110,26 +110,29 @@
             }
             var updateDiv = document.getElementById("flowersDiv");
             var retString = "";
-            retString += "NEW SHIT";
-            updateDiv.innerHTML = retString;
-            console.log(startIndex);
+            printFlowers(array);
         }
         var changeDiv = document.getElementById("flowersDiv");
-        var retString = "";
-        retString += "<table border = 1><tr>"
-        var count = 1;
-        for (var flower = 0; flower < flowers.length; flower++){
-            retString += "<td style='text-align:center'>";
-            retString += "<img src ='images/"+flowers[flower].picture+"' id = '"+flowers[flower].name+"' onclick='sortFlowers(id,flowers)'><br>";
-            retString += flowers[flower].name;
-            retString += "</td>";
-            count++;
-            if (count % 5 == 0){
-                retString += "</tr><tr>";
-            }
-            }
-        retString += "</table>";
-        changeDiv.innerHTML += retString;
+
+        printFlowers(flowers);
+
+        function printFlowers(array){
+            var retString = "";
+            retString += "<table border = 1><tr>"
+            var count = 1;
+            for (var flower = 0; flower < array.length; flower++){
+                retString += "<td style='text-align:center'>";
+                retString += "<img src ='images/"+array[flower].picture+"' id = '"+array[flower].name+"' onclick='sortFlowers(id,flowers)'><br>";
+                retString += array[flower].name;
+                retString += "</td>";
+                count++;
+                if (count % 5 == 0){
+                    retString += "</tr><tr>";
+                }
+                }
+            retString += "</table>";
+            changeDiv.innerHTML += retString;
+        }
 
     
     </script>
