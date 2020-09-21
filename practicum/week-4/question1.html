@@ -55,20 +55,21 @@
        ];
 
        var changeDiv = document.getElementById("flowersDiv");
-       //changeDiv.innerHTML += "<table border = 1><tr>"
+       var retString = "";
+       retString += "<table border = 1><tr>"
        var count = 1;
        for (var flower = 0; flower < flowers.length; flower++){
-           changeDiv.innerHTML += "<td>";
-           changeDiv.innerHTML += "<img src ='images/"+flowers[flower].picture+"'>";
+           retString += "<td>";
+           retString += "<img src ='images/"+flowers[flower].picture+"'>";
            //changeDiv.innerHTML += flowers[flower].name;
-           changeDiv.innerHTML += "</td>";
+           retString += "</td>";
            count++;
-           console.log(count);
            if (count % 5 == 0){
-               changeDiv.innerHTML += "</tr><tr>";
+               retString += "</tr><tr>";
            }
            }
-        //changeDiv.innerHTML += "</table>";
+        retString += "</table>";
+        changeDiv.innerHTML += retString;
 
     </script>
 </body>
