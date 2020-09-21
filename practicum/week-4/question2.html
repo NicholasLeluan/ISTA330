@@ -102,7 +102,9 @@
         ];
         function sortFlowers(clicked,array){
             console.log(clicked);
-            console.log(array);
+            for (var x = 0; x < array.length; x++){
+                console.log(array[x].name);
+            }
             array.sort();
             console.log(array);
         }
