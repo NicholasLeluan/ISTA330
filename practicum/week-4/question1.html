@@ -15,9 +15,7 @@
         and under the image display its name.
     </div>
     <table>
-    <div id='flowersDiv'>
-
-    </div>
+    <div id='flowersDiv'> </div>
     </table>
     <script>
         /*
@@ -61,7 +59,7 @@
                changeDiv.innerHTML += "<tr>";
            }
            changeDiv.innerHTML += "<td>";
-           changeDiv.innerHTML += "<img src ='images/"+flowers[flower].picture+"'>";
+           changeDiv.innerHTML += "<img src ='images/"+flowers[flower].picture+"'><br>";
            changeDiv.innerHTML += flowers[flower].name;
            changeDiv.innerHTML += "</td>";
            count++;
