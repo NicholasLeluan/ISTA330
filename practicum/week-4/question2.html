@@ -109,7 +109,7 @@
         var count = 1;
         for (var flower = 0; flower < flowers.length; flower++){
             retString += "<td style='text-align:center'>";
-            retString += "<img src ='images/"+flowers[flower].picture+"' onclick='sortFlowers("+flowers[flower].name+")'><br>";
+            retString += "<img src ='images/"+flowers[flower].picture+"' onclick='sortFlowers(''"+flowers[flower].name+"'')'><br>";
             retString += flowers[flower].name;
             retString += "</td>";
             count++;
