@@ -101,7 +101,6 @@
             waterlily
         ];
         function sortFlowers(clicked,array){
-            console.log(clicked);
             array.sort()
             for (var x = 0; x < array.length; x++){
                 if (array[x].name == clicked){
@@ -109,6 +108,10 @@
                 }
                 console.log(array[x].name);
             }
+            var updateDiv = document.getElementById("flowersDiv");
+            var retString = "";
+            retString += "NEW SHIT";
+            updateDiv.innerHTML = retString;
             console.log(startIndex);
         }
         var changeDiv = document.getElementById("flowersDiv");
