@@ -100,6 +100,9 @@
             rose,
             waterlily
         ];
+
+        printFlowers(flowers);
+
         function sortFlowers(clicked,array){
             array.sort()
             for (var x = 0; x < array.length; x++){
@@ -112,7 +115,6 @@
             var retString = "";
             printFlowers(array);
         }
-        printFlowers(flowers);
 
         function printFlowers(array){
             var changeDiv = document.getElementById("flowersDiv");
@@ -121,7 +123,7 @@
             var count = 1;
             for (var flower = 0; flower < array.length; flower++){
                 retString += "<td style='text-align:center'>";
-                retString += "<img src ='images/"+array[flower].picture+"' id = '"+array[flower].name+"' onclick='sortFlowers(id,array)'><br>";
+                retString += "<img src ='images/"+array[flower].picture+"' id = '"+array[flower].name+"' onclick='sortFlowers(id,flowers)'><br>";
                 retString += array[flower].name;
                 retString += "</td>";
                 count++;
