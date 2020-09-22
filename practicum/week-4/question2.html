@@ -122,6 +122,13 @@
             return sortedFlowerObj;
         }
 
+        function getParsedArray(array,index){
+            var beginning = array.slice(index);
+            var end = array.slice(0,index);
+            var newArray = beginning.concat(end);
+            return newArray;
+        }
+
         function sortFlowers(clicked,array){
             var sortedArray = sortArray(array);
             for (var x = 0; x < sortedArray.length; x++){
@@ -129,6 +136,7 @@
                     var startIndex = x;
                 }
             }
+            var parsedArray = getParsedArray(sortedArray,startIndex);
             printFlowers(sortedArray);
         }
         function printFlowers(flowers){
