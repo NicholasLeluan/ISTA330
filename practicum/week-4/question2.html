@@ -100,6 +100,9 @@
             rose,
             waterlily
         ];
+
+        function printFlowers(flowers);
+        
         function sortArray(array){
             console.log(array);
             var tempArray = [];
@@ -134,23 +137,23 @@
             console.log(startIndex);
         }
         function printFlowers(flowers){
-        var changeDiv = document.getElementById("flowersDiv");
-        var retString = "";
-        retString += "<table border = 1><tr>"
-        var count = 1;
-        for (var flower = 0; flower < flowers.length; flower++){
-            retString += "<td style='text-align:center'>";
-            retString += "<img src ='images/"+flowers[flower].picture+"' id = '"+flowers[flower].name+"' onclick='sortFlowers(id,flowers)'><br>";
-            retString += flowers[flower].name;
-            retString += "</td>";
-            count++;
-            if (count % 5 == 0){
-                retString += "</tr><tr>";
+            var changeDiv = document.getElementById("flowersDiv");
+            var retString = "";
+            retString += "<table border = 1><tr>"
+            var count = 1;
+            for (var flower = 0; flower < flowers.length; flower++){
+                retString += "<td style='text-align:center'>";
+                retString += "<img src ='images/"+flowers[flower].picture+"' id = '"+flowers[flower].name+"' onclick='sortFlowers(id,flowers)'><br>";
+                retString += flowers[flower].name;
+                retString += "</td>";
+                count++;
+                if (count % 5 == 0){
+                    retString += "</tr><tr>";
+                }
+                }
+            retString += "</table>";
+            changeDiv.innerHTML = retString;
             }
-            }
-        retString += "</table>";
-        changeDiv.innerHTML = retString;
-        }
 
     
     </script>
