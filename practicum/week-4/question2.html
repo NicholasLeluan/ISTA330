@@ -107,6 +107,19 @@
                 tempArray.push(array[f].name);
             }
             var sortedVals = tempArray.sort();
+            var sortedFlowerObj = [];
+            for (var x = 0; x < sortedVals.length; x++){
+                var currFlower = sortedVals[x]
+                for (var y = 0; y < array.length;y++){
+                    if (currFlower === array[y].name){
+                        sortedFlowerObj.push(array[y]);
+                    }
+                }
+            }
+            for (var p = 0; p < array.length;p++){
+                console.log(sortedFlowerObj[p].name);
+            }
+
             console.log(sortedVals);
             /*
             for (var x = 0; x < array.length; x++){
