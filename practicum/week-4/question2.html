@@ -102,9 +102,11 @@
         ];
         function sortArray(array){
             console.log(array);
+            var tempArray = [];
             for (var f = 0; f < array.length;f++){
-                console.log(array[f].name);
+                tempArray.push(array[f].name);
             }
+            console.log(tempArray);
             /*
             for (var x = 0; x < array.length; x++){
                 for (var y = 0; y < array.length-x; y++){
