@@ -116,38 +116,16 @@
                     }
                 }
             }
-            for (var p = 0; p < array.length;p++){
-                console.log(sortedFlowerObj[p].name);
-            }
-
-            console.log(sortedVals);
-            /*
-            for (var x = 0; x < array.length; x++){
-                for (var y = 0; y < array.length-x; y++){
-                    if (array[y].name > array[y+1].name){
-                        var temp = array[y].name;
-                        array[y].name = array[y+1];
-                        array[y+1] = temp;
-                    }
-
-                }
-            }
-            for (var f = 0; f < array.length;f++){
-                console.log(array[f].name);
-            }
-            */
-
-
-            return array;
+            return sortedFlowerObj;
         }
 
         function sortFlowers(clicked,array){
             var sortedArray = sortArray(array);
-            for (var x = 0; x < array.length; x++){
-                if (array[x].name == clicked){
+            for (var x = 0; x < sortedArray.length; x++){
+                if (sortedArray[x].name == clicked){
                     var startIndex = x;
                 }
-                //console.log(array[x].name);
+                console.log("after sort: "+ array[x].name);
             }
             var updateDiv = document.getElementById("flowersDiv");
             var retString = "";
