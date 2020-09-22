@@ -129,12 +129,7 @@
                     var startIndex = x;
                 }
             }
-
-            var updateDiv = document.getElementById("flowersDiv");
-            var retString = "";
-            retString += "NEW SHIT";
-            updateDiv.innerHTML = retString;
-            console.log(startIndex);
+            printFlowers(sortedArray);
         }
         function printFlowers(flowers){
             var changeDiv = document.getElementById("flowersDiv");
