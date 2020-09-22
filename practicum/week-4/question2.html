@@ -125,14 +125,15 @@
                 if (sortedArray[x].name == clicked){
                     var startIndex = x;
                 }
-                console.log("after sort: "+ sortedArray[x].name);
             }
+
             var updateDiv = document.getElementById("flowersDiv");
             var retString = "";
             retString += "NEW SHIT";
             updateDiv.innerHTML = retString;
             console.log(startIndex);
         }
+        function printFlowers(flowers){
         var changeDiv = document.getElementById("flowersDiv");
         var retString = "";
         retString += "<table border = 1><tr>"
@@ -148,7 +149,8 @@
             }
             }
         retString += "</table>";
-        changeDiv.innerHTML += retString;
+        changeDiv.innerHTML = retString;
+        }
 
     
     </script>
