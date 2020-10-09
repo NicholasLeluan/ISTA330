@@ -6,6 +6,6 @@ window.onload = () => {
     let username = hostname.split('.')[0];
     console.log(username);
     let iframe = document.getElementById('myApplicationFrame');
-    iframe.setAttribute('src', `http://${username}.github.io/imagequiz/Login`);
+    iframe.setAttribute('src', `http://${username}.github.io/imagequiz/`);
 }
 
